@@ -19,6 +19,8 @@ namespace XamFormsWithWebSockets.Droid
 
             base.OnCreate(bundle);
 
+            Websockets.Droid.WebsocketConnection.Link();
+
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }

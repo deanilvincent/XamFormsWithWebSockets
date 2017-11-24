@@ -22,6 +22,8 @@ namespace XamFormsWithWebSockets.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Websockets.Ios.WebsocketConnection.Link();
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

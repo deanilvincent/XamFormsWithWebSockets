@@ -3,11 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamFormsWithWebSockets"
              x:Class="XamFormsWithWebSockets.MainPage">
-    <ContentPage.Content>
+    <StackLayout>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="Message"/>
+            <Button Text="Send"
+                    x:Name="ButtonSend"
+                    Clicked="ButtonSend_OnClicked"/>
         </StackLayout>
-    </ContentPage.Content>
+
+        <Label Text="Messages"/>
+
+        <StackLayout x:Name="ReceivedMessages"/>
+    </StackLayout>
 </ContentPage>

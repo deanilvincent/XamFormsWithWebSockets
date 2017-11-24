@@ -20,7 +20,7 @@ namespace XamFormsWithWebSockets.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            
             LoadApplication(new XamFormsWithWebSockets.App());
         }
     }
